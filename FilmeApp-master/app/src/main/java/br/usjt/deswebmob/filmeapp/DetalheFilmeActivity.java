@@ -1,8 +1,7 @@
 package br.usjt.deswebmob.filmeapp;
 
-/*@Autor: Ricardo Ferla Silva
-    RA: 81620904
- */
+/*Autor: Ricardo Ferla Silva
+* RA: 81620904*/
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,6 @@ public class DetalheFilmeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalhe_filme);
 
         //filme
-
         id = findViewById(R.id.txtId);
         titulo = findViewById(R.id.txtTitulo);
         descricao = findViewById(R.id.txtDescricao);

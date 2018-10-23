@@ -1,8 +1,7 @@
 package br.usjt.deswebmob.filmeapp;
 
-/*@Autor: Ricardo Ferla Silva
-    RA: 81620904
- */
+/*Autor: Ricardo Ferla Silva
+ * RA: 81620904*/
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,11 +27,13 @@ public class ListaFilmesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_filmes);
         activity = this;
         filme = new Filme();
+
         Intent intent = getIntent();
         String genero = intent.getStringExtra(MainActivity.CHAVE);
         ListView listView = findViewById(R.id.lista_filme);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, filme.getListaNomes(genero));
+        FilmeArrayAdapter adapter = new FilmeArrayAdapter(this, filme.getFilmesPorGenero(genero));
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, filme.getListaNomes(genero));
         //Acima é onde o Adapter pega as informações para jogar na tela, e abaixo, é onde ele já está colocando na view
         listView.setAdapter(adapter);
 

@@ -1,8 +1,7 @@
 package br.usjt.deswebmob.filmeapp;
 
-/*@Autor: Ricardo Ferla Silva
-    RA: 81620904
- */
+/*Autor: Ricardo Ferla Silva
+ * RA: 81620904*/
 
 import java.util.ArrayList;
 
